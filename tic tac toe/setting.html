@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h2>Game Settings</h2>
+        
+        <div class="setting-group">
+            <label class="setting-label">Game Mode</label>
+            <div class="radio-options">
+                <label class="radio-card">
+                    <input type="radio" name="game-mode" id="mode-pvp" value="pvp" checked>
+                    <span>Player vs Player</span>
+                </label>
+                <label class="radio-card">
+                    <input type="radio" name="game-mode" id="mode-ai" value="ai">
+                    <span>Player vs AI</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="setting-group" id="difficulty-group" style="display: none;">
+            <label class="setting-label">AI Difficulty</label>
+            <select class="custom-select" id="ai-difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+            </select>
+        </div>
+
+        <div class="setting-group toggle-group">
+            <span class="setting-label">Background Music</span>
+            <label class="switch">
+                <input type="checkbox" id="music-toggle" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="action-buttons">
+            <a class="btn-back" href="page.html">Back</a>
+        </div>
+    </div>
+    <script src="setting.js"></script>
+</body>
+</html>
